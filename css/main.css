@@ -1,0 +1,40 @@
+@font-face{
+    font-family:'clock';
+    src: url('fonts/Digit.TTF');
+}
+html, body {
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body {
+    background: url('../img/fond.jpg');
+    overflow: hidden;
+}
+
+/* CSS only for examples not required for centering */
+.container {
+    height: 100%;
+}
+.letter {
+    z-index: 999;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.letter:hover {
+    transform: scale(1.5);
+}
+#check {
+    z-index: 1;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+.timer {
+    font-family: clock;
+}
